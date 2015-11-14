@@ -11,34 +11,34 @@
   <script>
    var Employee = [
      {
-       ename : "llll",
-       num : 2,
-       salary : 5000
+       ename : "ravi",
+       num : "2",
+       salary : "5000"
      },
      {
-       ename : "bbbb",
-       num : 3,
-       salary : 6000
+       ename : "siva",
+       num : "3",
+       salary : "6000"
      },
      {
-       ename : "cccc",
-       num : 4,
-       salary : 8000
+       ename : "aravind",
+       num : "4",
+       salary : "8000"
      },
      {
-       ename : "zzzz",
-       num : 5,
-       salary : 9000
+       ename : "balu",
+       num : "5",
+       salary : "9000"
      },
      {
-       ename : "eeee",
-       num : 6,
-       salary : 4000
+       ename : "charan",
+       num : "6",
+       salary : "4000"
      },
      {
-       ename : "mmmm",
-       num : 7,
-       salary : 1000
+       ename : "delhi",
+       num : "7",
+       salary : "1000"
      }
    ];
 
@@ -70,12 +70,12 @@ function sorting(a,b){
    var temp;
 
 var len=a.length-1;
-for (i = 1; i < len; i++) {
-      for (j = 0; j < len - 1; j++) {
-         if (a[j].n > a[j + 1].n) {
-            temp = a[j];
-            a[j] = a[j + 1];
-            a[j + 1] = temp;
+for (var i = 0; i < len; i++) {
+      for (var j = i + 1 ; j < len; j++) {
+         if (a[i].n > a[j].n) {
+            temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
          }
       }
 }
